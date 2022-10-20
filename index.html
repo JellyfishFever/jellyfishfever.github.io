@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Villa Alleira Seminyak</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="" rel="icon">
+  <link href="" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href="assets/framework/aos/aos.css" rel="stylesheet">
+  <link href="assets/framework/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/framework/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/framework/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/framework/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style type="text/css">
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+    *::after,
+    *::before {
+      margin: 0;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+     :root {
+       --d: 700ms;
+       --e: cubic-bezier(0.19, 1, 0.22, 1);
+       --font-sans: 'Rubik', sans-serif;
+       --font-serif: 'Cardo', serif;
+    }
+
+     .page-content {
+       display: grid;
+       grid-gap: 1rem;
+       padding: 1rem;
+       max-width: 1024px;
+       margin: 0 auto;
+       font-family: var(--font-sans);
+    }
+
+     .card {
+       position: relative;
+       display: flex;
+       align-items: flex-end;
+       overflow: hidden;
+       padding: 1rem;
+       width: 100%;
+       text-align: center;
+       color: whitesmoke;
+       background-color: rgba(255, 255, 255, 0.2);
+       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+       /*border-color: #ffea00;*/
+       /*border: 1px solid rgba(255, 255, 255, 0.2);*/
+       border-radius: none;
+       -webkit-border-radius: none;
+
+    }
+     
+     .card:before {
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 110%;
+       background-size: cover;
+       background-position: 0 0;
+       transition: transform calc(var(--d) * 1.5) var(--e);
+       -webkit-transition: transform calc(var(--d) * 1.5) var(--e);
+       pointer-events: none;
+    }
+     .card:after {
+       content: '';
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 200%;
+       pointer-events: none;
+       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.320) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.540) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.790) 100%);
+       transform: translateY(-50%);
+       -webkit-transform: translateY(-50%);
+       transition: transform calc(var(--d) * 2) var(--e);
+       -webkit-transition: transform calc(var(--d) * 2) var(--e);
+    }
+     .card:nth-child(1):before {
+       background-image: url('https://images.unsplash.com/photo-1576604303800-f2435c2db6bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80');
+    }
+     .card:nth-child(2):before {
+       background-image: url('https://images.unsplash.com/photo-1609517905310-2ee66db122d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    }
+     .card:nth-child(3):before {
+       background-image: url('https://i.pinimg.com/564x/f2/16/15/f216159e9a4b7ebbf9b4526ae5965603.jpg');
+    }
+     .card:nth-child(4):before {
+       background-image: url('https://images.unsplash.com/photo-1613977257421-010b50211cd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    }
+     .contents {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       padding: 1rem;
+       transition: transform var(--d) var(--e);
+       -webkit-transition: transform var(--d) var(--e);
+       z-index: 1;
+    }
+     .contents > * + * {
+       margin-top: 1rem;
+    }
+     .title {
+       font-size: 1.3rem;
+       font-weight: bold;
+       line-height: 1.2;
+    }
+     .copy {
+       font-family: var(--font-serif);
+       font-size: 1.125rem;
+       font-style: italic;
+       line-height: 1.35;
+    }
+     .btn {
+       cursor: pointer;
+       margin-top: 1.5rem;
+       padding: 0.75rem 1.5rem;
+       font-size: 0.65rem;
+       font-weight: bold;
+       letter-spacing: 0.025rem;
+       text-transform: uppercase;
+       color: white;
+       background-color: black;
+       border: none;
+    }
+     .btn:hover {
+       background-color: #0d0d0d;
+    }
+     .btn:focus {
+       outline: 1px dashed yellow;
+       outline-offset: 3px;
+    }
+
+
+    /* Room Type */    
+    .room-section {
+      margin: 0;
+      /*min-height: 100vh;*/
+      /*padding: 40px;*/
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      /*background: hsl(220, 10%, 12%);*/
+      /*font-family: "Lato", "Segoe Ui", -apple-system, BlinkMacSystemFont, sans-serif;*/
+    }
+
+    /* .flip-card-container */
+    .flip-card-container {
+      --hue: 150;
+      --primary: hsl(var(--hue), 50%, 50%);
+      --white-1: hsl(0, 0%, 90%);
+      --white-2: hsl(0, 0%, 80%);
+      --dark: hsl(var(--hue), 25%, 10%);
+      --grey: hsl(0, 0%, 50%);
+
+      width: 310px;
+      height: 500px;
+      margin: 40px;
+
+      perspective: 1000px;
+    }
+
+    /* .flip-card */
+    .flip-card {
+      width: inherit;
+      height: inherit;
+
+      position: relative;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      transition: .6s .1s;
+      -webkit-transition: .6s .1s;
+    }
+
+    /* hover and focus-within states */
+    .flip-card-container:hover .flip-card,
+    .flip-card-container:focus-within .flip-card {
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+    }
+
+    /* .card-... */
+    .card-front,
+    .card-back {
+      width: 100%;
+      height: 100%;
+      border-radius: 24px;
+
+      background: var(--dark);
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+
+      backface-visibility: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* .card-front */
+    .card-front {
+      transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      z-index: 2;
+    }
+
+    /* .card-back */
+    .card-back {
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      z-index: 1;
+    }
+
+    /* figure */
+    figure {
+      z-index: -1;
+    }
+
+    /* figure, .img-bg */
+    figure,
+    .img-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    /* img */
+    .main-room-image {
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      border-radius: 24px;
+    }
+
+    /* figcaption */
+    figcaption {
+      display: block;
+
+      width: auto;
+      margin-top: 12%;
+      padding: 8px 22px;
+
+      font-weight: bold;
+      line-height: 1.6;
+      letter-spacing: 2px;
+      word-spacing: 6px;
+      text-align: right;
+
+      position: absolute;
+      top: 0;
+      right: 12px;
+
+      color: var(--white-1);
+      background: hsla(var(--hue), 25%, 10%, .5);
+    }
+
+    /* .img-bg */
+    .img-bg {
+      background: hsla(var(--hue), 25%, 10%, .5);
+    }
+
+    .card-front .img-bg {
+      clip-path: polygon(0 20%, 100% 40%, 100% 100%, 0 100%);
+    }
+
+    .card-front .img-bg::before {
+      content: "";
+
+      position: absolute;
+      top: 34%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(18deg);
+      -webkit-transform: translate(-50%, -50%) rotate(18deg);
+      width: 100%;
+      height: 6px;
+      border: 1px solid var(--primary);
+      border-left-color: transparent;
+      border-right-color: transparent;
+
+      transition: .1s;
+      -webkit-transition: .1s;
+    }
+
+    .card-back .img-bg {
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
+    }
+
+    /* hover state */
+    .flip-card-container:hover .card-front .img-bg::before {
+      width: 6px;
+      border-left-color: var(--primary);
+      border-right-color: var(--primary);
+    }
+
+    /* ul */
+    .ul-room-main {
+      padding-top: 50%;
+      margin: 0 auto;
+      width: 70%;
+      height: 100%;
+
+      list-style: none;
+      color: var(--white-1);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    /* li */
+    .li-room-main {
+      width: 100%;
+      margin-top: 12px;
+      padding-bottom: 12px;
+
+      font-size: 14px;
+      text-align: center;
+
+      position: relative;
+    }
+
+    .li-room-main:nth-child(2n) {
+      color: var(--white-2);
+    }
+
+    .li-room-main:not(:last-child)::after {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background: currentColor;
+      opacity: .2;
+    }
+
+    /* button */
+    .buttom-room-main {
+      font-family: inherit;
+      font-weight: bold;
+      color: var(--white-1);
+
+      letter-spacing: 2px;
+
+      padding: 9px 20px;
+      border: 1px solid var(--grey);
+      border-radius: 1000px;
+      background: transparent;
+      transition: .3s;
+      -webkit-transition: .3s;
+
+      cursor: pointer;
+    }
+
+    .buttom-room-main:hover,
+    .buttom-room-main:focus {
+      color: var(--primary);
+      background: hsla(var(--hue), 25%, 10%, .2);
+      border-color: currentColor;
+    }
+
+    .buttom-room-main:active {
+      transform: translate(2px);
+      -webkit-transform: translate(2px);
+    }
+
+    /* .design-container */
+    .design-container {
+      --tr: 90;
+      --op: .5;
+
+      width: 100%;
+      height: 100%;
+
+      background: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      pointer-events: none;
+    }
+
+    /* .design */
+    .design {
+      display: block;
+
+      background: var(--grey);
+      position: absolute;
+
+      opacity: var(--op);
+      transition: .3s;
+      -webkit-transition: .3s;
+
+    }
+
+    .design--1,
+    .design--2,
+    .design--3,
+    .design--4 {
+      width: 1px;
+      height: 100%;
+    }
+
+    .design--1,
+    .design--2 {
+      top: 0;
+      transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+      -webkit-transform: translateY(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+    }
+
+    .design--1 {
+      left: 20%;
+    }
+
+    .design--2 {
+      left: 80%;
+    }
+
+    .design--3,
+    .design--4 {
+      bottom: 0;
+      transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
+      -webkit-transform: translateY(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
+    }
+
+    .design--3 {
+      left: 24%;
+    }
+
+    .design--4 {
+      left: 76%;
+    }
+
+    .design--5,
+    .design--6,
+    .design--7,
+    .design--8 {
+      width: 100%;
+      height: 1px;
+    }
+
+    .design--5,
+    .design--6 {
+      left: 0;
+      transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+      -webkit-transform: translateX(calc((var(--tr) - (var(--tr) * 2)) * 1%));
+    }
+
+    .design--5 {
+      top: 41%;
+    }
+
+    .design--6 {
+      top: 59%;
+    }
+
+    .design--7,
+    .design--8 {
+      right: 0;
+      transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
+      -webkit-transform: translateX(calc((var(--tr) + (var(--tr) - var(--tr))) * 1%));
+    }
+
+    .design--7 {
+      top: 44%;
+    }
+
+    .design--8 {
+      top: 56%;
+    }
+
+    /* states */
+    .buttom-room-main:hover+.design-container,
+    .buttom-room-main:active+.design-container,
+    .buttom-room-main:focus+.design-container {
+      --tr: 20;
+      --op: .7;
+    }
+
+    .abs-site-link {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      color: hsla(0, 0%, 100%, .6);
+      font-size: 16px;
+      /*font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;*/
+    }
+
+    @media (min-width: 600px) {
+       .page-content {
+         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+     @media (min-width: 800px) {
+       .page-content {
+         grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (min-width: 600px) {
+       .card {
+         height: 350px;
+      }
+    }
+
+    @media (hover: hover) and (min-width: 600px) {
+       .card:after {
+         transform: translateY(0);
+         -webkit-transform: translateY(0);
+
+      }
+       .contents {
+         transform: translateY(calc(100% - 4.5rem));
+         -webkit-transform: translateY(calc(100% - 4.5rem));
+
+      }
+       .contents > *:not(.title) {
+         opacity: 0;
+         transform: translateY(1rem);
+         -webkit-transform: translateY(1rem);
+         transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+         -webkit-transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+      }
+       .card:hover, .card:focus-within {
+         align-items: center;
+      }
+       .card:hover:before, .card:focus-within:before {
+         transform: translateY(-4%);
+         -webkit-transform: translateY(-4%);
+      }
+       .card:hover:after, .card:focus-within:after {
+         transform: translateY(-50%);
+         -webkit-transform: translateY(-50%);
+      }
+       .card:hover .contents, .card:focus-within .contents {
+         transform: translateY(0);
+         -webkit-transform: translateY(0);
+      }
+       .card:hover .contents > *:not(.title), .card:focus-within .contents > *:not(.title) {
+         opacity: 1;
+         transform: translateY(0);
+         -webkit-transform: translateY(0);
+         transition-delay: calc(var(--d) / 8);
+         -webkit-transition-delay: calc(var(--d) / 8);
+      }
+       .card:focus-within:before, .card:focus-within:after, .card:focus-within .contents, .card:focus-within .contents > *:not(.title) {
+         transition-duration: 0s;
+         -webkit-transition-duration: 0s;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-telephone-fill d-flex align-items-center"><span> <a id="villa-phone-number" href="tel:087860333222">+62 361 9344211  </a></span></i>
+        <i class="bi bi-envelope d-flex align-items-center ms-4"><span> <a id="villa-email" href="mailto:reservation@villaalleira.com">info@bestdealsasiagroup.com</a></span></i>
+      </div>
+
+      <!-- <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+          <li>En</li>
+          <li><a href="#">Ind</a></li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 style="font-family: 'Playfair Display', serif;" class="logo me-auto me-lg-0"><a href="index.html">Villa Alleira</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#specials">Special Package</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" id="book-now-on-mobile" target="_blank" href="https://bestdealsasiarentals.com/listing/villa-alleira-seminyak/">Book Now</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="https://bestdealsasiarentals.com/listing/villa-alleira-seminyak/" target="_blank" class="book-a-room-btn scrollto d-none d-lg-flex">Book Now</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center" style="background: url('assets/photos/alleira-1 - copy.jpg') no-repeat; background-size: cover; background-position: center bottom;">
+    <div class="container position-relative text-center text-lg-start">
+      <div class="row">
+        <div class="col-lg-8">
+          <i><h1 data-aos="fade-right" data-aos-delay="100" style="font-weight: lighter;">Welcome to <span>Villa Alleira Seminyak</span></h1></i>
+          <h2 data-aos="fade-right" data-aos-delay="150" style="margin-top: 10px; font-weight: 600;">a good villa to stay!</h2>
+
+          <!-- <div class="btns">
+            <a href="#specials" class="btn-menu animated fadeInUp scrollto">Our Special Packages</a>
+            <a href="#contact" class="btn-book animated fadeInUp scrollto">Contact Us</a>
+          </div> -->
+        </div>
+        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <!-- <a href="https://assets.mixkit.co/videos/preview/mixkit-happy-woman-in-white-dress-runs-to-the-sea-37040-large.mp4" class="glightbox play-btn">
+
+          </a> -->
+        </div>
+      </div>
+
+
+    </div>
+  </section><!-- End Hero -->
+
+      <center style="bottom: 0; top: 100% !important; padding-bottom: 15px; background: #000;">
+        <a href="#about" class="go-to-about"><i style="font-size: 45px; color: #ffea00;" class="bi bi-arrow-down-circle-fill"></i></a>
+      </center>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about" style="background: url('assets/photos/beach.jpg') center no-repeat; background-size: cover;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1500">
+            <div class="about-img">
+              <img src="assets/photos/alleira.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+
+
+            <div class="section-title" data-aos="fade-up">
+              <!-- <h2>About</h2> -->
+              <p style="color: #ffea00;">About Us</p>
+            </div>
+
+            <!-- <h3 style="font-weight: lighter;">Villa Alleira Seminyak,</h3> -->
+            <p class="fst-italic" style="line-height: 1.6 !important; font-weight: lighter;" data-aos-duration="1000" data-aos-delay="200" data-aos="fade-up">
+              Villa Alleira Seminyak is a renovated five-bedroom family villa, located in the heart of famous Seminyak, within easy walking distance to Ku-De-Ta beach. The property offers a spacious, open-air living area adjoined with a dining space for 8, and includes a well-equipped kitchen. Outside features green surrounding a private pool with poolside loungers and a BBQ grill.
+The property includes a large balcony overlooking the swimming pool, the perfect setting for private dinner parties or gathering with friends. When staying at our villa, you will enjoy a variety of relaxing spaces with a complete privacy. You can relax poolside, request in-villa spa and massage services, enjoy your personal staff and more exclusive services from our Professional team.
+            </p>
+            <!-- <ul>
+              <li><i class="bi bi-check-circle"></i> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ipsum enim, interdum suscipit diam vulputate nec.</li>
+              <li><i class="bi bi-check-circle"></i> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ipsum enim, interdum suscipit diam vulputate nec.</li>
+              <li><i class="bi bi-check-circle"></i> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ipsum enim, interdum suscipit diam vulputate nec.</li>
+            </ul> -->
+            <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur ipsum enim, interdum suscipit diam vulputate nec.
+            </p> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts" style="background: #26231d; padding: 0;">
+
+        <div class="row counters">
+
+          <div class="col-lg-2 col-6 text-center" data-aos="fade-up-right" data-aos-duration="1000">
+            <img src="assets/icon/wifi - copy.png" class="img-fluid-facilities" alt="">
+            <p class="text-facilities">Free Wi-Fi</p>
+          </div>
+
+          <div class="col-lg-2 col-6 text-center" data-aos="fade-up-right" data-aos-duration="1500">
+            <img src="assets/icon/waiter-2 - copy.png" class="img-fluid-facilities" alt="">
+            <p class="text-facilities">Butler Service</p>
+          </div>
+
+          <div class="col-lg-2 col-6 text-center" data-aos="fade-up-right" data-aos-duration="2000">
+            <img src="assets/icon/swimming - copy.png" class="img-fluid-facilities" alt="">
+            <p class="text-facilities">Swimming Pool</p>
+          </div>
+
+          <div class="col-lg-2 col-6 text-center" data-aos="fade-up-right" data-aos-duration="2500">
+            <img src="assets/icon/tea-cup - copy.png" class="img-fluid-facilities" alt="">
+            <p class="text-facilities">Afternoon Tea</p>
+          </div>
+
+          <div class="col-lg-2 col-6 text-center" data-aos="fade-up-right" data-aos-duration="2800">
+            <img src="assets/icon/route - copy.png" class="img-fluid-facilities" alt="">
+            <p class="text-facilities">Shuttle Service</p>
+          </div>
+
+          <div class="col-lg-2 col-6 text-center" data-aos="fade-up-right" data-aos-duration="3000">
+            <img src="assets/icon/bed-1 - copy.png" class="img-fluid-facilities" alt="">
+            <p class="text-facilities">Turn Down Service</p>
+          </div>
+
+        </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container">
+
+        <center>
+          <div class="section-title" data-aos="fade-up">
+            <!-- <h2>Specials</h2> -->
+            <p class="text-shadow">Special Packages</p>
+          </div>
+        </center>
+
+        <main class="page-content">
+          <div class="card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="contents">
+              <h2 class="title">Honeymoon Package</h2>
+              <p class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra ante sagittis elit faucibus, id congue diam imperdiet.</p>
+              <button class="btn">View Package</button>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-duration="1500">
+            <div class="contents">
+              <h2 class="title">Celebration Party</h2>
+              <p class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra ante sagittis elit faucibus, id congue diam imperdiet.</p>
+              <button class="btn">View Package</button>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-duration="2000">
+            <div class="contents">
+              <h2 class="title">Signature Flower Pteals</h2>
+              <p class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra ante sagittis elit faucibus, id congue diam imperdiet.</p>
+              <button class="btn">View Package</button>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-duration="2500">
+            <div class="contents">
+              <h2 class="title">Blissful Package</h2>
+              <p class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra ante sagittis elit faucibus, id congue diam imperdiet.</p>
+              <button class="btn">View Package</button>
+            </div>
+          </div>
+        </main>
+
+
+
+      </div>
+    </section><!-- End Specials Section -->
+
+    <!-- ======= Room Type ======= -->
+    <section id="room-type" class="room-types">
+      <div class="container">
+
+        <div class="section-title text-center" data-aos="fade-up">
+          <!-- <h2>Room</h2> -->
+          <p>Room Type</p>
+        </div>
+
+        <div class="room-section">
+        <!-- flip-card-container -->
+        <div class=" flip-card-container" style="--hue: 220" data-aos="fade-up" data-aos-duration="1000">
+          <div class="flip-card">
+
+            <div class="card-front">
+              <figure>
+                <div class="img-bg"></div>
+                <img class="main-room-image" src="https://images.unsplash.com/photo-1601578318413-af2284f10486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80g" alt="Villa Alleira">
+                <figcaption>5 Bedrooms</figcaption>
+              </figure>
+
+              <ul class="ul-room-main">
+                <li class="li-room-main" style="color: #ffea00;">IDR 5,717,250</li>
+                <li class="li-room-main">5 King Size Bed</li>
+                <li class="li-room-main">10 Guests</li>
+                <li class="li-room-main">Childen Allowed</li>
+                <li class="li-room-main">Bathroom</li>
+              </ul>
+            </div>
+
+            <div class="card-back">
+              <figure>
+                <div class="img-bg"></div>
+                <img class="main-room-image" src="https://images.unsplash.com/photo-1552858725-a19e7fcd3ac4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Villa Alleira">
+              </figure>
+
+              <button class="buttom-room-main">Book</button>
+
+              <div class="design-container">
+                <span class="design design--1"></span>
+                <span class="design design--2"></span>
+                <span class="design design--3"></span>
+                <span class="design design--4"></span>
+                <span class="design design--5"></span>
+                <span class="design design--6"></span>
+                <span class="design design--7"></span>
+                <span class="design design--8"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /flip-card-container -->
+
+        <!-- flip-card-container -->
+        <div class="flip-card-container" style="--hue: 170" data-aos="fade-up" data-aos-duration="1500">
+          <div class="flip-card">
+
+            <div class="card-front">
+              <figure>
+                <div class="img-bg"></div>
+                <img class="main-room-image" src="https://images.unsplash.com/photo-1545552663-0eb050bb04c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80" alt="villa Alleira">
+                <figcaption>4 Bedrooms</figcaption>
+              </figure>
+
+              <ul class="ul-room-main">
+                <li class="li-room-main" style="color: #ffea00;">IDR 4,727,250</li>
+                <li class="li-room-main">4 King Size Bed</li>
+                <li class="li-room-main">8 Guests</li>
+                <li class="li-room-main">Childen Allowed</li>
+                <li class="li-room-main">Bathroom</li>
+              </ul>
+            </div>
+
+            <div class="card-back">
+              <figure>
+                <div class="img-bg"></div>
+                <img src="https://images.pexels.com/photos/1906795/pexels-photo-1906795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Villa Alleira">
+              </figure>
+
+              <button class="buttom-room-main">Book</button>
+
+              <div class="design-container">
+                <span class="design design--1"></span>
+                <span class="design design--2"></span>
+                <span class="design design--3"></span>
+                <span class="design design--4"></span>
+                <span class="design design--5"></span>
+                <span class="design design--6"></span>
+                <span class="design design--7"></span>
+                <span class="design design--8"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /flip-card-container -->
+
+        <!-- flip-card-container -->
+        <div class="flip-card-container" style="--hue: 350" data-aos="fade-up" data-aos-duration="2000">
+          <div class="flip-card">
+
+            <div class="card-front">
+              <figure>
+                <div class="img-bg"></div>
+                <img style="background-position: bottom;" src="https://images.unsplash.com/photo-1606916929342-fef8a9b43f25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Villa Alleira">
+                <figcaption>3 Bedroom</figcaption>
+              </figure>
+
+              <ul class="ul-room-main">
+                <li class="li-room-main" style="color: #ffea00;">IDR 4,727,250</li>
+                <li class="li-room-main">3 King Size Bed</li>
+                <li class="li-room-main">6 Guests</li>
+                <li class="li-room-main">Childen Allowed</li>
+                <li class="li-room-main">Bathroom</li>
+              </ul>
+            </div>
+
+            <div class="card-back">
+              <!-- only if the image is necessary -->
+              <figure>
+                <div class="img-bg"></div>
+                <img style="background-position: center bottom;" src="https://images.pexels.com/photos/833045/pexels-photo-833045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Villa Alleira">
+              </figure>
+
+              <button class="buttom-room-main">Book</button>
+
+              <!-- can add svg here and remove these eight spans -->
+              <div class="design-container">
+                <span class="design design--1"></span>
+                <span class="design design--2"></span>
+                <span class="design design--3"></span>
+                <span class="design design--4"></span>
+                <span class="design design--5"></span>
+                <span class="design design--6"></span>
+                <span class="design design--7"></span>
+                <span class="design design--8"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /flip-card-container -->
+        </div>
+
+      </div>
+    </section><!-- End Room Type Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container">
+        <center>
+          <div class="section-title" data-aos="fade-up">
+            <!-- <h2>Gallery</h2> -->
+            <p>Gallery</p>
+          </div>
+        </center>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="gallery-item">
+              <a href="assets/photos/alleira-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img style="filter: brightness(65%);" src="assets/photos/alleira-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="gallery-item">
+              <a href="assets/photos/alleira-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img style="filter: brightness(65%);" src="assets/photos/alleira-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="gallery-item">
+              <a href="assets/photos/alleira-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img style="filter: brightness(65%);" src="assets/photos/alleira-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-duration="2500">
+            <div class="gallery-item">
+              <a href="assets/photos/alleira-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img style="filter: brightness(65%);" src="assets/photos/alleira-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-duration="3000">
+            <div class="gallery-item">
+              <a href="assets/photos/alleira-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img style="filter: brightness(65%);" src="assets/photos/alleira-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-duration="3500">
+            <div class="gallery-item">
+              <a href="assets/photos/alleira-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img style="filter: brightness(65%);" src="assets/photos/alleira-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-duration="4000">
+            <div class="gallery-item">
+              <a href="assets/photos/alleira-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img style="filter: brightness(65%);" src="assets/photos/alleira-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4" data-aos="zoom-in" data-aos-duration="4500">
+            <div class="gallery-item">
+              <a href="assets/photos/alleira-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img style="filter: brightness(65%);" src="assets/photos/alleira-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+      <div class="section-title" data-aos="fade-up" data-aos-duration="1000">
+          <!-- <h2>Contact</h2> -->
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="1500">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15776.334873812655!2d115.1602705!3d-8.6835888!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa7961dfc25561bf!2sVilla%20Alleira%20Seminyak!5e0!3m2!1sen!2sid!4v1666059745062!5m2!1sen!2sid" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4" style="margin-top: 40px;" data-aos="fade-up" data-aos-duration="1000">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p><a href="https://goo.gl/maps/Mc16KRdfRDZwSD7i8" target="_blank">Jalan Merta Sari No.2D, Seminyak, Kerobokan Kelod, Kuta Utara, Badung Regency, Bali 80361</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1500">
+            <div class="info">
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:reservation@villaalleira.com">info@bestdealsasiagroup.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="info">
+              <div class="phone">
+                  <i class="bi bi-telephone-fill"></i>
+                  <h4>Call:</h4>
+                  <p><a href="tel:087860555333">+62 361 9344211</a></p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      <hr>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-lg-5">
+            &copy; Copyright <strong><span>Villa Alleira</span></strong>. All Rights Reserved
+          </div>
+          <div class="col-lg-5" style="font-size: 18px;">
+            <a style="font-size: 14px;" target="_blank" href="https://www.facebook.com/people/Best-Deals-Asia-Rental/100086466367895/">facebook</a>
+            <a style="font-size: 14px; margin: auto 15px;" target="_blank" href="https://www.instagram.com/bestdealsasiarentals/">instagram</a>
+            <a style="font-size: 14px;" href="#">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <center>
+    <div id="preloader">
+      <p>Loading...</p>
+    </div>
+  </center>
+
+  <a href="https://api.whatsapp.com/send?phone=6281703569659&text=Hi%20there,%20I'd%20like%20%20to%20book%20a%20room%20for%20" class="whatsapp-message" target="_blank">
+    <img class="whatsapp-message-icon" src="assets/icon/whatsapp - copy.png"/>
+  </a>
+
+  <script src="assets/framework/aos/aos.js"></script>
+  <script src="assets/framework/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/framework/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
